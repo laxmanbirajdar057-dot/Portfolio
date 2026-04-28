@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Laxman Birajdar — Java Backend Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">LB<span class="dot">.</span></div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-tag mono">Available for opportunities</div>
+    <h1 class="hero-title">
+      <span class="line">Laxman</span>
+      <span class="line accent">Birajdar</span>
+    </h1>
+    <p class="hero-role mono">Java Backend Developer &amp; Full Stack Engineer</p>
+    <p class="hero-desc">
+      Final-year Electronics &amp; Telecom student building production-grade backend systems with
+      <strong>Spring Boot</strong>, <strong>REST APIs</strong>, and <strong>MySQL</strong>.
+      6-month internship in testing &amp; debugging at Selec Controls Pvt. Ltd.
+    </p>
+    <div class="hero-actions">
+      <a href="mailto:laxmanbirajdar057@gmail.com" class="btn-primary">📧 Get in Touch</a>
+      <a href="https://www.linkedin.com/in/laxmanbirajdar" target="_blank" class="btn-secondary">💼 LinkedIn</a>
+    </div>
+    <div class="hero-meta">
+      <span>📍 Mumbai, India</span>
+      <span>📱 +91-8452029801</span>
+      <span class="available-badge">🟢 Open to Work</span>
+    </div>
+    <div class="scroll-hint" id="scrollHint">scroll ↓</div>
+  </section>
+
+  <!-- STATS BAR -->
+  <div class="stats-bar">
+    <div class="stat">
+      <span class="stat-num" data-target="50">0</span><span>+</span>
+      <span class="stat-label">Bugs Resolved</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat">
+      <span class="stat-num" data-target="6">0</span><span> mo</span>
+      <span class="stat-label">Internship Experience</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat">
+      <span class="stat-num" data-target="2">0</span><span></span>
+      <span class="stat-label">Projects Delivered</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat">
+      <span class="stat-num" data-target="3">0</span><span></span>
+      <span class="stat-label">Certifications</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-inner">
+      <div class="section-label mono">01 / About</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2>Who I Am</h2>
+          <p>
+            I'm a final-year B.E. student in Electronics &amp; Telecommunication at Rajiv Gandhi Institute of
+            Technology, Mumbai — actively transitioning into software development with a focus on Java backend systems.
+          </p>
+          <p>
+            My 6-month internship at <strong>Selec Controls Pvt. Ltd.</strong> gave me real-world exposure to testing,
+            debugging, and collaborating with engineering teams on industrial automation products. I've resolved
+            hardware defects, written test cases, and improved product reliability by 25%.
+          </p>
+          <p>
+            I'm currently deepening my Spring Boot and REST API skills and actively targeting <strong>Java
+              Backend</strong> and <strong>Full Stack</strong> roles where I can contribute from day one.
+          </p>
+        </div>
+        <div class="about-cards">
+          <div class="info-card">
+            <div class="info-icon">🎓</div>
+            <div>
+              <div class="info-title">Education</div>
+              <div class="info-val">B.E. Electronics &amp; Telecom</div>
+              <div class="info-sub">MCT's Rajiv Gandhi Institute of Technology</div>
+              <div class="info-sub">2023 – 2026</div>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">🏢</div>
+            <div>
+              <div class="info-title">Last Role</div>
+              <div class="info-val">Testing &amp; Debugging Intern</div>
+              <div class="info-sub">Selec Controls Pvt. Ltd., Navi Mumbai</div>
+              <div class="info-sub">Jan 2023 – Jul 2023</div>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">🎯</div>
+            <div>
+              <div class="info-title">Targeting</div>
+              <div class="info-val">Java Backend / Full Stack</div>
+              <div class="info-sub">Entry-level positions</div>
+              <div class="info-sub">Mumbai &amp; Remote</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-inner">
+      <div class="section-label mono">02 / Skills</div>
+      <h2>Technical Stack</h2>
+      <p class="section-sub">Technologies I build with — grouped by area.</p>
+      <div class="skills-grid">
+
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <span class="skill-icon">☕</span>
+            <span class="skill-cat-title">Languages</span>
+          </div>
+          <div class="skill-chips">
+            <span class="chip primary">Java</span>
+            <span class="chip">HTML5</span>
+            <span class="chip">CSS3</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <span class="skill-icon">⚙️</span>
+            <span class="skill-cat-title">Backend</span>
+          </div>
+          <div class="skill-chips">
+            <span class="chip primary">Spring Boot</span>
+            <span class="chip primary">REST APIs</span>
+            <span class="chip">Spring MVC</span>
+            <span class="chip">JPA / Hibernate</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <span class="skill-icon">🗄️</span>
+            <span class="skill-cat-title">Database</span>
+          </div>
+          <div class="skill-chips">
+            <span class="chip primary">MySQL</span>
+            <span class="chip primary">JDBC</span>
+            <span class="chip">SQL</span>
+            <span class="chip">DB Design</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <span class="skill-icon">🛠️</span>
+            <span class="skill-cat-title">Tools</span>
+          </div>
+          <div class="skill-chips">
+            <span class="chip primary">Git / GitHub</span>
+            <span class="chip">Postman</span>
+            <span class="chip">Maven</span>
+            <span class="chip">VS Code</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <span class="skill-icon">🧠</span>
+            <span class="skill-cat-title">Concepts</span>
+          </div>
+          <div class="skill-chips">
+            <span class="chip">OOP</span>
+            <span class="chip">MVC Pattern</span>
+            <span class="chip">CRUD</span>
+            <span class="chip">Testing</span>
+            <span class="chip">Debugging</span>
+          </div>
+        </div>
+
+        <div class="skill-category learning">
+          <div class="skill-cat-header">
+            <span class="skill-icon">📈</span>
+            <span class="skill-cat-title">Currently Learning</span>
+          </div>
+          <div class="skill-chips">
+            <span class="chip learning-chip">Spring Security</span>
+            <span class="chip learning-chip">JWT / OAuth2</span>
+            <span class="chip learning-chip">DSA</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-inner">
+      <div class="section-label mono">03 / Projects</div>
+      <h2>Featured Work</h2>
+      <p class="section-sub">Projects that demonstrate backend thinking and clean architecture.</p>
+      <div class="projects-grid">
+
+        <!-- Project 1: X-Ray (Major Academic Project) -->
+        <div class="project-card" data-index="01">
+          <div class="project-number mono">01</div>
+          <div class="project-header">
+            <div>
+              <span class="major-badge">⭐ Major Academic Project</span>
+              <h3>Smart X-Ray Luggage Detection System</h3>
+            </div>
+            <div class="project-tags">
+              <span class="tag">Java</span>
+              <span class="tag">Spring Boot</span>
+              <span class="tag">REST API</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">YOLO</span>
+              <span class="tag">STM32</span>
+              <span class="tag">Python</span>
+              <span class="tag">Docker</span>
+            </div>
+          </div>
+          <p class="project-desc">
+            A full-stack intelligent luggage screening system with a Java/Spring Boot backend, YOLO-based AI threat
+            detection, STM32 hardware integration, and an end-to-end containerized pipeline.
+          </p>
+          <ul class="project-highlights">
+            <li><span class="bullet">→</span> RESTful backend with <code>JWT authentication</code> handling real-time
+              image processing via microservices architecture</li>
+            <li><span class="bullet">→</span> Integrated <code>YOLO-based AI model</code> via REST API for automated
+              threat classification on scanned luggage images</li>
+            <li><span class="bullet">→</span> Optimized MySQL schema with indexed tables for scan results, detection
+              logs, and audit history — reducing query response time</li>
+            <li><span class="bullet">→</span> Spring Boot integrated with <code>STM32 microcontroller</code> over serial
+              interface to trigger conveyor stop, alert LED, and solenoid diversion</li>
+            <li><span class="bullet">→</span> End-to-end pipeline: image ingestion → AI inference → REST classification
+              → hardware actuation, containerized with <code>Docker</code></li>
+          </ul>
+          <div class="project-footer">
+            <span class="badge">Microservices</span>
+            <span class="badge">AI Integration</span>
+            <span class="badge">IoT</span>
+            <span class="badge">Docker</span>
+            <a href="https://github.com/laxmanbirajdar057-dot/Smart-X-Ray-Luggage-Detection" target="_blank"
+              class="github-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+              View on GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2: Hospital Management -->
+        <div class="project-card" data-index="02">
+          <div class="project-number mono">02</div>
+          <div class="project-header">
+            <h3>Hospital Management System</h3>
+            <div class="project-tags">
+              <span class="tag">Java</span>
+              <span class="tag">JDBC</span>
+              <span class="tag">MySQL</span>
+            </div>
+          </div>
+          <p class="project-desc">
+            A console-based Java application to manage patients, doctors, and appointments — built with clean OOP
+            principles, SQL injection prevention, and a well-structured three-class architecture.
+          </p>
+          <ul class="project-highlights">
+            <li><span class="bullet">→</span> Built console-based app managing patients, doctors, and appointments via
+              <code>JDBC</code> and MySQL</li>
+            <li><span class="bullet">→</span> Used <code>PreparedStatement</code> to prevent SQL injection across all
+              CRUD operations</li>
+            <li><span class="bullet">→</span> Three-class architecture with constructor injection, encapsulation, and
+              separation of concerns</li>
+          </ul>
+          <div class="project-footer">
+            <span class="badge">OOP</span>
+            <span class="badge">Security</span>
+            <span class="badge">Database</span>
+            <a href="https://github.com/laxmanbirajdar057-dot/Hospital_Management_System" target="_blank"
+              class="github-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+              View on GitHub
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE & EDUCATION -->
+  <section id="experience">
+    <div class="section-inner">
+      <div class="section-label mono">04 / Experience &amp; Education</div>
+      <h2>Background</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta mono">Jan 2023 – Jul 2023</div>
+            <div class="timeline-title">Product Testing &amp; Debugging Intern</div>
+            <div class="timeline-org">Selec Controls Pvt. Ltd. · Navi Mumbai</div>
+            <ul class="timeline-points">
+              <li>Resolved 50+ hardware defects in industrial automation systems, improving product reliability by
+                <strong>25%</strong>
+              </li>
+              <li>Conducted functional and regression testing across multiple product builds</li>
+              <li>Documented detailed test cases and collaborated with engineering teams for issue resolution</li>
+            </ul>
+            <div class="timeline-chips">
+              <span class="t-chip">Testing</span>
+              <span class="t-chip">Debugging</span>
+              <span class="t-chip">Documentation</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot edu"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta mono">Sep 2023 – Jun 2026</div>
+            <div class="timeline-title">B.E. Electronics &amp; Telecommunication</div>
+            <div class="timeline-org">MCT's Rajiv Gandhi Institute of Technology, Mumbai</div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot edu"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta mono">2020 – 2023</div>
+            <div class="timeline-title">Diploma – Electronics Engineering</div>
+            <div class="timeline-org">Government Polytechnic Mumbai</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Certifications -->
+      <div class="certs-section">
+        <h3>Certifications</h3>
+        <div class="certs-grid">
+          <div class="cert-card">
+            <div class="cert-icon">🏅</div>
+            <div class="cert-name">Technology Job Simulation</div>
+            <div class="cert-org">Deloitte Australia</div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">🏅</div>
+            <div class="cert-name">Software Engineering Job Simulation</div>
+            <div class="cert-org">JPMorgan Chase</div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">🏅</div>
+            <div class="cert-name">Software Engineering Job Simulation</div>
+            <div class="cert-org">Quantium</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-inner contact-inner">
+      <div class="section-label mono">05 / Contact</div>
+      <h2>Let's Connect</h2>
+      <p class="contact-sub">I'm actively looking for entry-level Java Backend and Full Stack roles. If you're a
+        recruiter or hiring manager — let's talk.</p>
+      <div class="contact-links">
+        <a href="mailto:laxmanbirajdar057@gmail.com" class="contact-btn">
+          <span>📧</span>
+          <span>laxmanbirajdar057@gmail.com</span>
+        </a>
+        <a href="https://www.linkedin.com/in/laxmanbirajdar" target="_blank" class="contact-btn">
+          <span>💼</span>
+          <span>linkedin.com/in/laxmanbirajdar</span>
+        </a>
+        <a href="tel:+918452029801" class="contact-btn">
+          <span>📱</span>
+          <span>+91-8452029801</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <span class="mono">© 2026 Laxman Birajdar</span>
+      <span class="footer-sep">·</span>
+      <span>Java Backend Developer · Mumbai, India</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
