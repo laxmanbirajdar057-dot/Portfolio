@@ -2,7 +2,7 @@
 
 Personal portfolio website showcasing my projects, skills, and experience as a Java Backend Engineer.
 
-🌐 **Live Site:** https://laxmanbirajdarportfolio.netlify.app/
+🌐 **Live Site:** [https://laxmanbirajdarportfolio.netlify.app/](https://laxmanbirajdar-portfolio.netlify.app/)
 
 ---
 
