@@ -1,129 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Laxman Birajdar</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
-</head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Laxman Birajdar — DevOps Engineer</title>
+<meta name="description" content="Laxman Birajdar is a DevOps Engineer building automated, reliable infrastructure and deployment pipelines with AWS, Docker, Kubernetes, Terraform, and CI/CD." />
+<meta name="theme-color" content="#0A0E14" />
 
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Laxman Birajdar — DevOps Engineer" />
+<meta property="og:description" content="Building and automating reliable infrastructure and deployment pipelines." />
+<meta property="og:url" content="https://laxmanbirajdar-portfolio.netlify.app/" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Laxman Birajdar — DevOps Engineer" />
+<meta name="twitter:description" content="Building and automating reliable infrastructure and deployment pipelines." />
+
+<link rel="stylesheet" href="style.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
 <body>
 
-  <!-- NAV -->
-  <nav id="navbar">
-    <div class="nav-inner">
-      <div class="nav-logo">LB<span class="dot">.</span></div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact" class="nav-cta">Hire Me</a></li>
-      </ul>
-      <button class="hamburger" id="hamburger" aria-label="Menu">
-        <span></span><span></span><span></span>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- NAV -->
+<header id="navbar">
+  <div class="nav-inner">
+    <a href="#top" class="nav-logo" aria-label="Laxman Birajdar, home">
+      <span class="logo-mark" aria-hidden="true"></span>Laxman Birajdar
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#journey">Journey</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch to light theme" aria-pressed="false">
+        <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.5 12H2M22 12h-2.5M5.6 5.6l1.7 1.7M16.7 16.7l1.7 1.7M18.4 5.6l-1.7 1.7M7.3 16.7l-1.7 1.7" stroke-linecap="round"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z"/></svg>
       </button>
+      <a href="assets/Laxman_Birajdar_Resume.pdf" download class="btn btn-small btn-outline">Resume</a>
     </div>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav id="mobileMenu" class="mobile-menu" aria-label="Mobile">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#journey">Journey</a>
+    <a href="#contact">Contact</a>
+    <a href="assets/Laxman_Birajdar_Resume.pdf" download class="btn btn-outline mobile-resume">Download Resume</a>
   </nav>
+</header>
+
+<main id="main">
 
   <!-- HERO -->
-  <section id="hero">
-    <div class="hero-tag mono">Available for opportunities</div>
-    <h1 class="hero-title">
-      <span class="line">Laxman</span>
-      <span class="line accent">Birajdar</span>
-    </h1>
-    <p class="hero-role mono">Java Backend Developer &amp; Software Developer</p>
-    <p class="hero-desc">
-      Electronics &amp; Telecom graduate building production-grade backend systems with
-      <strong>Spring Boot</strong>, <strong>REST APIs</strong>, and <strong>MySQL</strong>.
-      6-month backend internship at <strong>Selec Controls Pvt. Ltd.</strong>
-    </p>
-    <div class="hero-actions">
-      <a href="mailto:laxmanbirajdar057@gmail.com" class="btn-primary">📧 Get in Touch</a>
-      <a href="https://www.linkedin.com/in/laxmanbirajdar" target="_blank" class="btn-secondary">💼 LinkedIn</a>
+  <section id="top" class="hero">
+    <div class="section-inner hero-inner">
+      <div class="hero-copy">
+        <p class="status-pill"><span class="status-dot" aria-hidden="true"></span>Open to DevOps Engineer roles</p>
+        <h1 class="hero-title">DevOps Engineer</h1>
+        <p class="hero-desc">
+          I build, automate, and deploy reliable infrastructure and applications — from
+          containerized services and CI/CD pipelines to cloud environments that stay
+          observable and easy to operate. My focus is closing the gap between writing
+          code and running it safely in production.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="assets/Laxman_Birajdar_Resume.pdf" download class="btn btn-outline">Download Resume</a>
+          <a href="#contact" class="btn btn-ghost">Contact Me</a>
+        </div>
+        <div class="hero-meta">
+          <a href="https://github.com/laxmanbirajdar057-dot" target="_blank" rel="noopener" class="icon-link" aria-label="GitHub profile">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/laxman-birajdar" target="_blank" rel="noopener" class="icon-link" aria-label="LinkedIn profile">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+          </a>
+          <span class="meta-sep" aria-hidden="true">·</span>
+          <span class="meta-text">Mumbai, India</span>
+        </div>
+      </div>
+
+      <div class="hero-panel" aria-hidden="true">
+        <div class="terminal">
+          <div class="terminal-bar">
+            <span class="term-dot r"></span><span class="term-dot y"></span><span class="term-dot g"></span>
+            <span class="terminal-title">deploy.sh</span>
+          </div>
+          <div class="terminal-body" id="terminalBody"></div>
+        </div>
+        <div class="pipeline-strip">
+          <div class="pipe-node" data-state="done"><span class="pipe-dot"></span>Build</div>
+          <div class="pipe-line"></div>
+          <div class="pipe-node" data-state="done"><span class="pipe-dot"></span>Test</div>
+          <div class="pipe-line"></div>
+          <div class="pipe-node" data-state="done"><span class="pipe-dot"></span>Deploy</div>
+          <div class="pipe-line"></div>
+          <div class="pipe-node" data-state="active"><span class="pipe-dot"></span>Monitor</div>
+        </div>
+      </div>
     </div>
-    <div class="hero-meta">
-      <span>📍 Mumbai, India</span>
-      <span>📱 +91-8452029801</span>
-    </div>
-    <div class="scroll-hint" id="scrollHint">scroll ↓</div>
   </section>
 
-  <!-- STATS BAR -->
-  <div class="stats-bar">
-    <div class="stat">
-      <span class="stat-num" data-target="13">0</span><span>+</span>
-      <span class="stat-label">API Endpoints Built</span>
-    </div>
-    <div class="stat-divider"></div>
-    <div class="stat">
-      <span class="stat-num" data-target="6">0</span><span> mo</span>
-      <span class="stat-label">Internship Experience</span>
-    </div>
-    <div class="stat-divider"></div>
-    <div class="stat">
-      <span class="stat-num" data-target="3">0</span><span></span>
-      <span class="stat-label">Projects Delivered</span>
-    </div>
-    <div class="stat-divider"></div>
-    <div class="stat">
-      <span class="stat-num" data-target="3">0</span><span></span>
-      <span class="stat-label">Certifications</span>
-    </div>
-  </div>
-
   <!-- ABOUT -->
-  <section id="about">
+  <section id="about" class="section">
     <div class="section-inner">
-      <div class="section-label mono">01 / About</div>
+      <div class="section-head">
+        <h2>About</h2>
+        <p class="section-sub">Where infrastructure, automation, and delivery meet.</p>
+      </div>
       <div class="about-grid">
         <div class="about-text">
-          <h2>Who I Am</h2>
           <p>
-            I'm a B.E. graduate in Electronics &amp; Telecommunication from Rajiv Gandhi Institute of
-            Technology, Mumbai — focused on building production-grade backend systems in Java.
+            I work at the intersection of development and operations — designing deployment
+            workflows, containerizing applications, and provisioning cloud infrastructure that
+            is repeatable and easy to reason about. My approach starts with a simple question:
+            how do we ship this safely, and how do we know when it breaks.
           </p>
           <p>
-            My 6-month internship at <strong>Selec Controls Pvt. Ltd.</strong> gave me real-world exposure
-            to backend development — contributing to REST API endpoints, writing MySQL queries, and
-            observing how production systems handle real data in an industrial automation environment.
+            I'm comfortable across the delivery lifecycle: writing CI/CD pipelines in
+            GitHub Actions and Jenkins, containerizing services with Docker, managing AWS
+            resources with IAM, EC2, and S3, and scripting automation with Bash. I care about
+            reducing manual steps, tightening feedback loops, and building systems that fail
+            loudly instead of silently.
           </p>
           <p>
-            I've built REST APIs with <strong>Spring Boot</strong> and <strong>Spring Data JPA</strong>, and I'm
-            actively targeting <strong>Java Backend</strong> roles where I can contribute from day one.
+            I collaborate naturally with developers — I've built the applications I deploy,
+            which means I design infrastructure with the engineer's workflow in mind, not
+            against it.
           </p>
         </div>
         <div class="about-cards">
           <div class="info-card">
-            <div class="info-icon">🎓</div>
+            <svg class="info-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             <div>
-              <div class="info-title">Education</div>
-              <div class="info-val">B.E. Electronics &amp; Telecom</div>
-              <div class="info-sub">MCT's Rajiv Gandhi Institute of Technology</div>
-              <div class="info-sub">2023 – 2026</div>
+              <div class="info-title">Focus</div>
+              <div class="info-val">CI/CD &amp; Cloud Deployment</div>
+              <div class="info-sub">AWS · Docker · GitHub Actions</div>
             </div>
           </div>
           <div class="info-card">
-            <div class="info-icon">🏢</div>
+            <svg class="info-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 2 3 7v6c0 5 4 8.5 9 9 5-.5 9-4 9-9V7l-9-5Z" stroke-linejoin="round"/></svg>
             <div>
-              <div class="info-title">Last Role</div>
-              <div class="info-val">Backend Developer Intern</div>
-              <div class="info-sub">Selec Controls Pvt. Ltd., Navi Mumbai</div>
-              <div class="info-sub">Jan 2023 – Jun 2023</div>
+              <div class="info-title">Certified</div>
+              <div class="info-val">AWS Cloud Practitioner</div>
+              <div class="info-sub">Amazon Web Services</div>
             </div>
           </div>
           <div class="info-card">
-            <div class="info-icon">🎯</div>
+            <svg class="info-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             <div>
               <div class="info-title">Targeting</div>
-              <div class="info-val">Java Backend / Full Stack</div>
-              <div class="info-sub">Entry-level positions</div>
+              <div class="info-val">Entry-level DevOps roles</div>
               <div class="info-sub">Mumbai &amp; Remote</div>
             </div>
           </div>
@@ -133,83 +169,76 @@
   </section>
 
   <!-- SKILLS -->
-  <section id="skills">
+  <section id="skills" class="section alt">
     <div class="section-inner">
-      <div class="section-label mono">02 / Skills</div>
-      <h2>Technical Stack</h2>
-      <p class="section-sub">Technologies I build with — grouped by area.</p>
+      <div class="section-head">
+        <h2>Technical Skills</h2>
+        <p class="section-sub">Tools I use to build, ship, and operate systems.</p>
+      </div>
       <div class="skills-grid">
 
-        <div class="skill-category">
-          <div class="skill-cat-header">
-            <span class="skill-icon">☕</span>
-            <span class="skill-cat-title">Languages</span>
+        <div class="skill-card">
+          <div class="skill-card-head">
+            <svg class="skill-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M7 18a4.5 4.5 0 0 1-.4-8.98A5.5 5.5 0 0 1 17.3 8.1 4 4 0 0 1 17 16H7Z" stroke-linejoin="round"/></svg>
+            <h3>Cloud</h3>
           </div>
-          <div class="skill-chips">
-            <span class="chip primary">Java</span>
-            <span class="chip primary">SQL</span>
-            <span class="chip">JavaScript</span>
-            <span class="chip">HTML</span>
-            <span class="chip">CSS</span>
-          </div>
+          <div class="chip-row"><span class="chip">AWS</span></div>
         </div>
 
-        <div class="skill-category">
-          <div class="skill-cat-header">
-            <span class="skill-icon">⚙️</span>
-            <span class="skill-cat-title">Backend</span>
+        <div class="skill-card">
+          <div class="skill-card-head">
+            <svg class="skill-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 4h16v6H4zM4 14h7v6H4zM14 14h6v6h-6z"/></svg>
+            <h3>CI/CD</h3>
           </div>
-          <div class="skill-chips">
-            <span class="chip primary">Spring Boot</span>
-            <span class="chip primary">Spring Security</span>
-            <span class="chip primary">REST APIs</span>
-            <span class="chip primary">Spring Data JPA</span>
-            <span class="chip">JWT</span>
-            <span class="chip">Spring MVC</span>
-            <span class="chip">Hibernate</span>
-          </div>
+          <div class="chip-row"><span class="chip">Jenkins</span><span class="chip">GitHub Actions</span></div>
         </div>
 
-        <div class="skill-category">
-          <div class="skill-cat-header">
-            <span class="skill-icon">🗄️</span>
-            <span class="skill-cat-title">Database</span>
+        <div class="skill-card">
+          <div class="skill-card-head">
+            <svg class="skill-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect x="3" y="7" width="8" height="8" rx="1"/><rect x="13" y="4" width="8" height="8" rx="1"/><rect x="13" y="14" width="8" height="6" rx="1"/></svg>
+            <h3>Containerization &amp; Orchestration</h3>
           </div>
-          <div class="skill-chips">
-            <span class="chip primary">MySQL</span>
-            <span class="chip">JDBC</span>
-            <span class="chip">DB Design</span>
-            <span class="chip">Query Optimization</span>
-          </div>
+          <div class="chip-row"><span class="chip">Docker</span><span class="chip">Kubernetes</span></div>
         </div>
 
-        <div class="skill-category">
-          <div class="skill-cat-header">
-            <span class="skill-icon">🛠️</span>
-            <span class="skill-cat-title">Tools</span>
+        <div class="skill-card">
+          <div class="skill-card-head">
+            <svg class="skill-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 21V9l8-6 8 6v12M9 21v-7h6v7" stroke-linejoin="round"/></svg>
+            <h3>Infrastructure as Code</h3>
           </div>
-          <div class="skill-chips">
-            <span class="chip primary">Git / GitHub</span>
-            <span class="chip primary">Postman</span>
-            <span class="chip">Maven</span>
-            <span class="chip">Docker</span>
-            <span class="chip">Railway</span>
-          </div>
+          <div class="chip-row"><span class="chip">Terraform</span></div>
         </div>
 
-        <div class="skill-category">
-          <div class="skill-cat-header">
-            <span class="skill-icon">🧠</span>
-            <span class="skill-cat-title">Concepts</span>
+        <div class="skill-card">
+          <div class="skill-card-head">
+            <svg class="skill-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="6" cy="6" r="2.5"/><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="12" r="2.5"/><path d="M6 8.5v7M8.3 17 15.8 13M8.3 7 15.8 11" stroke-linecap="round"/></svg>
+            <h3>Version Control</h3>
           </div>
-          <div class="skill-chips">
-            <span class="chip">OOP</span>
-            <span class="chip">DSA</span>
-            <span class="chip">MVC Pattern</span>
-            <span class="chip">Exception Handling</span>
-            <span class="chip">API Design</span>
-            <span class="chip">CRUD</span>
+          <div class="chip-row"><span class="chip">Git</span><span class="chip">GitHub</span></div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-head">
+            <svg class="skill-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="1.5"/><path d="M7 9h5M7 13h8" stroke-linecap="round"/></svg>
+            <h3>Operating Systems</h3>
           </div>
+          <div class="chip-row"><span class="chip">Linux</span></div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-head">
+            <svg class="skill-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="m5 7 5 5-5 5M13 19h6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <h3>Scripting</h3>
+          </div>
+          <div class="chip-row"><span class="chip">Bash</span><span class="chip">Python</span></div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-head">
+            <svg class="skill-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 19V6M4 14l4-4 3 3 5-6 4 4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <h3>Monitoring &amp; Logging</h3>
+          </div>
+          <div class="chip-row"><span class="chip">Prometheus</span><span class="chip">Grafana</span></div>
         </div>
 
       </div>
@@ -217,267 +246,220 @@
   </section>
 
   <!-- PROJECTS -->
-  <section id="projects">
+  <section id="projects" class="section">
     <div class="section-inner">
-      <div class="section-label mono">03 / Projects</div>
-      <h2>Featured Work</h2>
-      <p class="section-sub">Projects that demonstrate backend thinking and clean architecture.</p>
+      <div class="section-head">
+        <h2>Projects</h2>
+        <p class="section-sub">Hands-on work covering the full path from code to production.</p>
+      </div>
+
       <div class="projects-grid">
 
-        <!-- Project 01: X-Ray (Major Academic Project) -->
-        <div class="project-card" data-index="01">
-          <div class="project-number mono">01</div>
-          <div class="project-header">
-            <div>
-              <span class="major-badge">⭐ Major Academic Project</span>
-              <h3>Smart X-Ray Luggage Detection System</h3>
-            </div>
-            <div class="project-tags">
-              <span class="tag">Java</span>
-              <span class="tag">Spring Boot</span>
-              <span class="tag">Spring Security</span>
-              <span class="tag">JWT</span>
-              <span class="tag">MySQL</span>
-              <span class="tag">Railway</span>
-              <span class="tag">FastAPI</span>
-            </div>
+        <article class="project-card">
+          <div class="project-top">
+            <h3>URL Shortener — Containerized Deployment with CI/CD on AWS</h3>
+            <span class="status-tag good"><span class="status-dot" aria-hidden="true"></span>Deployed</span>
           </div>
           <p class="project-desc">
-            A Java Spring Boot backend for an intelligent luggage screening system — receiving AI threat detection
-            results, persisting scan data to MySQL, and serving web and mobile clients over secured REST APIs.
+            A Spring Boot + MySQL URL-shortening service, built to practice the full delivery
+            path: containerize the app, automate the pipeline, and run it on real cloud
+            infrastructure rather than a local machine.
           </p>
-          <ul class="project-highlights">
-            <li><span class="bullet">→</span> Developed the Spring Boot backend to receive threat detection results from
-              the AI service and persist scanned records into MySQL</li>
-            <li><span class="bullet">→</span> Designed MySQL schema for scan records, detection logs, and audit history
-              with indexed tables to keep query times low</li>
-            <li><span class="bullet">→</span> Secured all REST API endpoints using JWT authentication via Spring
-              Security, ensuring only authenticated clients can access scan records</li>
-            <li><span class="bullet">→</span> Deployed backend on Railway enabling concurrent access from multiple web
-              and mobile client applications</li>
-          </ul>
+          <div class="project-block">
+            <h4>Key work</h4>
+            <ul class="project-list">
+              <li>Built the service with Base62 encoding and packaged it using a multi-stage Docker build to minimize image size.</li>
+              <li>Set up a GitHub Actions pipeline that tests, builds, and pushes Docker images to GitHub Container Registry (GHCR) on every push to <code>main</code>.</li>
+              <li>Deployed to an AWS EC2 instance with Docker Compose, using environment-based secrets and security groups scoped for controlled network access.</li>
+            </ul>
+          </div>
           <div class="project-footer">
-            <span class="badge">JWT Auth</span>
-            <span class="badge">AI Integration</span>
-            <span class="badge">Cloud Deploy</span>
-            <a href="https://github.com/laxmanbirajdar057-dot/Smart-X-Ray-Luggage-Detection" target="_blank"
-              class="github-btn">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
-              </svg>
-              View on GitHub
+            <div class="tag-row">
+              <span class="tag">Spring Boot</span><span class="tag">Docker</span><span class="tag">GitHub Actions</span><span class="tag">AWS EC2</span><span class="tag">MySQL</span>
+            </div>
+            <a href="https://github.com/laxmanbirajdar057-dot/urlshortener" target="_blank" rel="noopener" class="btn btn-small btn-outline">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              View repository
             </a>
           </div>
-        </div>
+        </article>
 
-        <!-- Project 02: Job Tracker & Referral Management -->
-        <div class="project-card" data-index="02">
-          <div class="project-number mono">02</div>
-          <div class="project-header">
-            <h3>Smart Job Tracker &amp; Referral Management System</h3>
-            <div class="project-tags">
-              <span class="tag">Java</span>
-              <span class="tag">Spring Boot</span>
-              <span class="tag">Spring Security</span>
-              <span class="tag">JWT</span>
-              <span class="tag">MySQL</span>
-              <span class="tag">Vanilla JS</span>
-            </div>
+        <article class="project-card">
+          <div class="project-top">
+            <h3>Log Watcher + Slack Alert Script</h3>
+            <span class="status-tag good"><span class="status-dot" aria-hidden="true"></span>Running</span>
           </div>
           <p class="project-desc">
-            A full-stack job application tracker with referral contact management — built with Spring Boot,
-            JWT authentication, and a vanilla JS frontend. Features dashboard analytics and 8-stage
-            application status progression.
+            Manual log-checking doesn't scale. This script watches application logs in real
+            time and pushes an alert the moment something looks wrong, cutting the time
+            between failure and awareness.
           </p>
-          <ul class="project-highlights">
-            <li><span class="bullet">→</span> Designed normalized MySQL schema with User, Job, and Referral
-              entities using <code>@OneToOne</code> and <code>@ManyToOne</code> JPA relationships with lazy
-              loading to prevent N+1 query issues</li>
-            <li><span class="bullet">→</span> Implemented JWT authentication from scratch — custom
-              <code>JwtAuthenticationFilter</code>, SecurityContextHolder population, and route-level
-              security via Spring Security's filter chain</li>
-            <li><span class="bullet">→</span> Traced and resolved a multi-layer data persistence bug where
-              referral fields were silently dropped across entity mapping, DTO setters, service layer, and
-              JSON response serialization</li>
-            <li><span class="bullet">→</span> Built vanilla JS frontend with login/signup flow, stats
-              dashboard, and application status progression across 8 stages (Applied → Offer)</li>
-          </ul>
-          <div class="project-footer">
-            <span class="badge">Spring Security</span>
-            <span class="badge">JWT</span>
-            <span class="badge">Full Stack</span>
-            <a href="https://github.com/laxmanbirajdar057-dot/Smart-Job-Tracker-Referral-Management-System"
-              target="_blank" class="github-btn">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
-              </svg>
-              View on GitHub
-            </a>
+          <div class="project-block">
+            <h4>Key work</h4>
+            <ul class="project-list">
+              <li>Built a Bash script that tails application logs and detects error/warning patterns using regex-based matching.</li>
+              <li>Integrated the Slack webhook API to trigger automated alerts once error thresholds are breached.</li>
+              <li>Deployed the watcher as a persistent systemd service, so it keeps running and restarts automatically on failure.</li>
+            </ul>
           </div>
-        </div>
-
-        <!-- Project 03: Hospital Management -->
-        <div class="project-card" data-index="03">
-          <div class="project-number mono">03</div>
-          <div class="project-header">
-            <h3>Hospital Management System</h3>
-            <div class="project-tags">
-              <span class="tag">Java</span>
-              <span class="tag">Spring Boot</span>
-              <span class="tag">Spring Data JPA</span>
-              <span class="tag">MySQL</span>
-              <span class="tag">REST API</span>
+          <div class="project-footer">
+            <div class="tag-row">
+              <span class="tag">Bash</span><span class="tag">Regex</span><span class="tag">Slack API</span><span class="tag">systemd</span>
             </div>
-          </div>
-          <p class="project-desc">
-            A REST API-based Hospital Management System built with Spring Boot — supporting full CRUD for patients,
-            doctors, and appointments with layered architecture, global exception handling, and persistent MySQL
-            storage.
-          </p>
-          <ul class="project-highlights">
-            <li><span class="bullet">→</span> Developed a REST API managing Patients, Doctors, and Appointments with
-              full CRUD using Spring Boot and Spring Data JPA</li>
-            <li><span class="bullet">→</span> Implemented layered architecture — Controller, Service, and Repository —
-              with constructor injection and clear separation of concerns</li>
-            <li><span class="bullet">→</span> Eliminated manual SQL using Spring Data JPA derived query methods with
-              persistent MySQL storage</li>
-            <li><span class="bullet">→</span> Added global exception handling returning proper HTTP status codes (201,
-              404, 409) instead of generic 500 errors</li>
-          </ul>
-          <div class="project-footer">
-            <span class="badge">REST API</span>
-            <span class="badge">Spring Boot</span>
-            <span class="badge">Database</span>
-            <a href="https://github.com/laxmanbirajdar057-dot/Hospital_Management" target="_blank" class="github-btn">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
-              </svg>
-              View on GitHub
+            <a href="https://github.com/laxmanbirajdar057-dot/urlshortener" target="_blank" rel="noopener" class="btn btn-small btn-outline">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              View repository
             </a>
           </div>
-        </div>
+        </article>
 
+      </div>
+
+      <div class="more-projects">
+        <p>More builds and experiments live on GitHub.</p>
+        <a href="https://github.com/laxmanbirajdar057-dot" target="_blank" rel="noopener" class="btn btn-ghost">
+          Visit GitHub profile
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- EXPERIENCE & EDUCATION -->
-  <section id="experience">
+  <!-- JOURNEY -->
+  <section id="journey" class="section alt">
     <div class="section-inner">
-      <div class="section-label mono">04 / Experience &amp; Education</div>
-      <h2>Background</h2>
-      <div class="timeline">
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-meta mono">Jan 2023 – Jun 2023</div>
-            <div class="timeline-title">Backend Developer Intern</div>
-            <div class="timeline-org">Selec Controls Pvt. Ltd. · Navi Mumbai</div>
-            <ul class="timeline-points">
-              <li>Contributed to REST API endpoints for product data logging and inventory tracking
-                features alongside the backend engineering team</li>
-              <li>Wrote and reviewed MySQL queries across structured inventory tables — gained
-                exposure to real schema design and data operations in a production environment</li>
-              <li>Observed the full backend development cycle: API design, request-response flow,
-                and client-server communication on a live industrial automation system</li>
-            </ul>
-            <div class="timeline-chips">
-              <span class="t-chip">Java</span>
-              <span class="t-chip">REST API</span>
-              <span class="t-chip">MySQL</span>
-              <span class="t-chip">Backend Development</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-dot edu"></div>
-          <div class="timeline-content">
-            <div class="timeline-meta mono">Sep 2023 – Jun 2026</div>
-            <div class="timeline-title">B.E. Electronics &amp; Telecommunication</div>
-            <div class="timeline-org">MCT's Rajiv Gandhi Institute of Technology, Mumbai</div>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-dot edu"></div>
-          <div class="timeline-content">
-            <div class="timeline-meta mono">2020 – 2023</div>
-            <div class="timeline-title">Diploma – Electronics Engineering</div>
-            <div class="timeline-org">Government Polytechnic Mumbai</div>
-          </div>
-        </div>
-
+      <div class="section-head">
+        <h2>Professional Journey</h2>
+        <p class="section-sub">Education, certification, and hands-on work that shaped my DevOps foundation.</p>
       </div>
 
-      <!-- Certifications -->
-      <div class="certs-section">
-        <h3>Certifications</h3>
-        <div class="certs-grid">
-          <div class="cert-card"
-            onclick="window.open('https://drive.google.com/file/d/19grLwzb6KjSBDZe1vdXmtPS_2pTCSgff/view', '_blank')"
-            style="cursor:pointer;">
-            <div class="cert-icon">🏅</div>
-            <div class="cert-name">Technology Job Simulation</div>
-            <div class="cert-org">Deloitte Australia</div>
+      <ol class="timeline">
+        <li class="timeline-item">
+          <span class="timeline-dot" aria-hidden="true"></span>
+          <div class="timeline-content">
+            <div class="timeline-meta">2020 – 2023</div>
+            <h3>Diploma — Electronics Engineering</h3>
+            <p class="timeline-org">Government Polytechnic, Mumbai</p>
           </div>
-          <div class="cert-card"
-            onclick="window.open('https://drive.google.com/file/d/1fG-CkjijokWsA-dUWP_UZ8MM18DvNzHS/view', '_blank')"
-            style="cursor:pointer;">
-            <div class="cert-icon">🏅</div>
-            <div class="cert-name">Software Engineering Job Simulation</div>
-            <div class="cert-org">JPMorgan Chase</div>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-dot" aria-hidden="true"></span>
+          <div class="timeline-content">
+            <div class="timeline-meta">2023 – 2026</div>
+            <h3>B.E. — Electronics &amp; Telecommunication Engineering</h3>
+            <p class="timeline-org">MCT's Rajiv Gandhi Institute of Technology, Mumbai</p>
           </div>
-          <div class="cert-card"
-            onclick="window.open('https://drive.google.com/file/d/1agWDgVe7Nl0KX9h5oOQvkZJJGdb2pwlN/view', '_blank')"
-            style="cursor:pointer;">
-            <div class="cert-icon">🏅</div>
-            <div class="cert-name">Software Engineering Job Simulation</div>
-            <div class="cert-org">Quantium</div>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-dot accent" aria-hidden="true"></span>
+          <div class="timeline-content">
+            <div class="timeline-meta">Certification</div>
+            <h3>AWS Cloud Practitioner</h3>
+            <p class="timeline-org">Amazon Web Services</p>
           </div>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-dot accent" aria-hidden="true"></span>
+          <div class="timeline-content">
+            <div class="timeline-meta">Project</div>
+            <h3>Containerized CI/CD Pipeline on AWS</h3>
+            <p class="timeline-org">Designed and deployed the URL Shortener project's full pipeline — Docker, GitHub Actions, EC2.</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-dot accent" aria-hidden="true"></span>
+          <div class="timeline-content">
+            <div class="timeline-meta">Project</div>
+            <h3>Automated Log Monitoring &amp; Alerting</h3>
+            <p class="timeline-org">Built and deployed a Bash-based log watcher with Slack alerting, running as a systemd service.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" class="section">
+    <div class="section-inner">
+      <div class="section-head">
+        <h2>Certifications</h2>
+      </div>
+      <div class="certs-grid">
+        <div class="cert-card">
+          <div class="cert-top">
+            <svg class="cert-icon" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 2 3 7v6c0 5 4 8.5 9 9 5-.5 9-4 9-9V7l-9-5Z" stroke-linejoin="round"/><path d="m8.5 12 2.3 2.3L15.5 10" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span class="cert-year">2025</span>
+          </div>
+          <h3>AWS Cloud Practitioner</h3>
+          <p class="cert-org">Amazon Web Services</p>
+          <a href="https://drive.google.com/file/d/14H3WGhGc21Z1fZlT_4nUfZbAIQG9MsDj/view" target="_blank" rel="noopener" class="cert-link">
+            View credential
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section id="contact">
-    <div class="section-inner contact-inner">
-      <div class="section-label mono">05 / Contact</div>
-      <h2>Let's Connect</h2>
-      <p class="contact-sub">I'm actively looking for entry-level Java Backend and Software Developer roles. If you're a
-        recruiter or hiring manager — let's talk.</p>
-      <div class="contact-links">
-        <a href="mailto:laxmanbirajdar057@gmail.com" class="contact-btn">
-          <span>📧</span>
-          <span>laxmanbirajdar057@gmail.com</span>
-        </a>
-        <a href="https://www.linkedin.com/in/laxmanbirajdar" target="_blank" class="contact-btn">
-          <span>💼</span>
-          <span>linkedin.com/in/laxmanbirajdar</span>
-        </a>
-        <a href="tel:+918452029801" class="contact-btn">
-          <span>📱</span>
-          <span>+91-8452029801</span>
-        </a>
+  <section id="contact" class="section alt">
+    <div class="section-inner">
+      <div class="section-head">
+        <h2>Let's Connect</h2>
+        <p class="section-sub">Open to entry-level DevOps Engineer roles. If you're hiring, I'd like to hear from you.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-links">
+          <a href="mailto:laxmanbirajdar057@gmail.com" class="contact-row">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>laxmanbirajdar057@gmail.com</span>
+          </a>
+          <a href="https://www.linkedin.com/in/laxman-birajdar" target="_blank" rel="noopener" class="contact-row">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+            <span>linkedin.com/in/laxman-birajdar</span>
+          </a>
+          <a href="https://github.com/laxmanbirajdar057-dot" target="_blank" rel="noopener" class="contact-row">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            <span>github.com/laxmanbirajdar057-dot</span>
+          </a>
+        </div>
+
+        <form class="contact-form" action="https://formsubmit.co/laxmanbirajdar057@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="New message from portfolio site" />
+          <input type="hidden" name="_captcha" value="false" />
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send message</button>
+        </form>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <div class="footer-inner">
-      <span class="mono">© 2026 Laxman Birajdar</span>
-      <span class="footer-sep">·</span>
-      <span>Java Backend Developer · Mumbai, India</span>
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="section-inner footer-inner">
+    <span>© 2026 Laxman Birajdar. DevOps Engineer Portfolio.</span>
+    <div class="footer-links">
+      <a href="https://github.com/laxmanbirajdar057-dot" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/laxman-birajdar" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:laxmanbirajdar057@gmail.com">Email</a>
     </div>
-  </footer>
+  </div>
+</footer>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
-
 </html>

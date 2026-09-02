@@ -1,117 +1,99 @@
-/* ═══════════════════════════════════════════
-   LAXMAN BIRAJDAR — PORTFOLIO SCRIPTS
-═══════════════════════════════════════════ */
+(function () {
+  "use strict";
 
-// ── NAV SCROLL EFFECT ──
-const navbar = document.getElementById('navbar');
-window.addEventListener('scroll', () => {
-  navbar.classList.toggle('scrolled', window.scrollY > 30);
-});
+  var root = document.documentElement;
+  var themeToggle = document.getElementById("themeToggle");
+  var STORAGE_KEY = "lb-theme";
 
-// ── HAMBURGER MOBILE MENU ──
-const hamburger = document.getElementById('hamburger');
-const navLinks  = document.querySelector('.nav-links');
-
-hamburger.addEventListener('click', () => {
-  navLinks.classList.toggle('open');
-});
-
-// Close nav on link click
-navLinks.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => navLinks.classList.remove('open'));
-});
-
-// ── HIDE SCROLL HINT ──
-const scrollHint = document.getElementById('scrollHint');
-if (scrollHint) {
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 80) scrollHint.style.opacity = '0';
-    else scrollHint.style.opacity = '1';
-  });
-}
-
-// ── SCROLL REVEAL ──
-const revealElements = document.querySelectorAll(
-  '.info-card, .skill-category, .project-card, .timeline-item, .cert-card, .stat, .about-text, .about-cards'
-);
-
-revealElements.forEach(el => el.classList.add('reveal'));
-
-const revealObserver = new IntersectionObserver((entries) => {
-  entries.forEach((entry, i) => {
-    if (entry.isIntersecting) {
-      // Stagger delay based on sibling index
-      const siblings = Array.from(entry.target.parentElement.children);
-      const idx = siblings.indexOf(entry.target);
-      entry.target.style.transitionDelay = `${idx * 0.08}s`;
-      entry.target.classList.add('visible');
-      revealObserver.unobserve(entry.target);
+  function applyTheme(theme) {
+    root.setAttribute("data-theme", theme);
+    if (themeToggle) {
+      var isLight = theme === "light";
+      themeToggle.setAttribute("aria-pressed", String(isLight));
+      themeToggle.setAttribute("aria-label", isLight ? "Switch to dark theme" : "Switch to light theme");
     }
-  });
-}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-
-revealElements.forEach(el => revealObserver.observe(el));
-
-// ── COUNTER ANIMATION ──
-function animateCounter(el) {
-  const target = parseInt(el.dataset.target, 10);
-  const duration = 1400;
-  const start = performance.now();
-
-  function update(now) {
-    const elapsed = now - start;
-    const progress = Math.min(elapsed / duration, 1);
-    // Ease out cubic
-    const eased = 1 - Math.pow(1 - progress, 3);
-    el.textContent = Math.floor(eased * target);
-    if (progress < 1) requestAnimationFrame(update);
-    else el.textContent = target;
   }
-  requestAnimationFrame(update);
-}
 
-const counterObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      animateCounter(entry.target);
-      counterObserver.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.5 });
+  var stored = null;
+  try { stored = localStorage.getItem(STORAGE_KEY); } catch (e) {}
+  var prefersLight = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches;
+  applyTheme(stored || (prefersLight ? "light" : "dark"));
 
-document.querySelectorAll('.stat-num').forEach(el => counterObserver.observe(el));
+  if (themeToggle) {
+    themeToggle.addEventListener("click", function () {
+      var next = root.getAttribute("data-theme") === "light" ? "dark" : "light";
+      applyTheme(next);
+      try { localStorage.setItem(STORAGE_KEY, next); } catch (e) {}
+    });
+  }
 
-// ── ACTIVE NAV LINK HIGHLIGHT ──
-const sections = document.querySelectorAll('section[id]');
-const navAnchors = document.querySelectorAll('.nav-links a');
-
-const sectionObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      const id = entry.target.id;
-      navAnchors.forEach(a => {
-        a.style.background = '';
-        a.style.color = '';
+  // Mobile menu
+  var hamburger = document.getElementById("hamburger");
+  var mobileMenu = document.getElementById("mobileMenu");
+  if (hamburger && mobileMenu) {
+    hamburger.addEventListener("click", function () {
+      var open = mobileMenu.classList.toggle("open");
+      hamburger.setAttribute("aria-expanded", String(open));
+      hamburger.classList.toggle("active", open);
+    });
+    mobileMenu.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", function () {
+        mobileMenu.classList.remove("open");
+        hamburger.setAttribute("aria-expanded", "false");
       });
-      const active = document.querySelector(`.nav-links a[href="#${id}"]`);
-      if (active && !active.classList.contains('nav-cta')) {
-        active.style.background = 'var(--chip-bg)';
-        active.style.color = 'var(--ink)';
+    });
+  }
+
+  // Sticky nav shadow
+  var navbar = document.getElementById("navbar");
+  window.addEventListener("scroll", function () {
+    if (navbar) navbar.classList.toggle("scrolled", window.scrollY > 8);
+  }, { passive: true });
+
+  // Terminal typing animation (single orchestrated hero moment)
+  var body = document.getElementById("terminalBody");
+  if (body) {
+    var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var lines = [
+      { text: "docker build -t app:latest .", type: "cmd" },
+      { text: "terraform apply -auto-approve", type: "cmd" },
+      { text: "kubectl rollout status deployment/app", type: "cmd" },
+      { text: "\u2713 deployment successful", type: "ok" }
+    ];
+
+    if (reduceMotion) {
+      body.innerHTML = lines.map(function (l) {
+        var cls = l.type === "ok" ? "line-ok" : "line-cmd";
+        return '<div class="' + cls + '">' + l.text + "</div>";
+      }).join("");
+    } else {
+      var lineIndex = 0, charIndex = 0;
+      var container = null;
+
+      function typeChar() {
+        if (lineIndex >= lines.length) {
+          var caret = document.createElement("span");
+          caret.className = "caret";
+          body.appendChild(caret);
+          return;
+        }
+        var current = lines[lineIndex];
+        if (charIndex === 0) {
+          container = document.createElement("div");
+          container.className = current.type === "ok" ? "line-ok" : "line-cmd";
+          body.appendChild(container);
+        }
+        if (charIndex <= current.text.length) {
+          container.textContent = current.text.slice(0, charIndex);
+          charIndex++;
+          setTimeout(typeChar, current.type === "ok" ? 18 : 32);
+        } else {
+          lineIndex++;
+          charIndex = 0;
+          setTimeout(typeChar, 260);
+        }
       }
+      setTimeout(typeChar, 500);
     }
-  });
-}, { threshold: 0.4 });
-
-sections.forEach(s => sectionObserver.observe(s));
-
-// ── SMOOTH SCROLL OFFSET (for fixed nav) ──
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', e => {
-    const target = document.querySelector(anchor.getAttribute('href'));
-    if (!target) return;
-    e.preventDefault();
-    const offset = 72;
-    const top = target.getBoundingClientRect().top + window.scrollY - offset;
-    window.scrollTo({ top, behavior: 'smooth' });
-  });
-});
+  }
+})();
