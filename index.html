@@ -1,257 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Laxman Birajdar — DevOps &amp; Cloud Engineer</title>
-  <meta name="description"
-    content="Laxman Birajdar is a DevOps &amp; Cloud Engineer building automated deployments with AWS, Docker, Terraform, and GitHub Actions.">
-  <meta name="theme-color" content="#070B12">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Laxman Birajdar — DevOps &amp; Cloud Engineer">
-  <meta property="og:description" content="AWS, Docker, Terraform, and GitHub Actions projects, documented on GitHub.">
-  <meta property="og:url" content="https://laxmanbirajdar-portfolio.netlify.app/">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Laxman Birajdar — DevOps &amp; Cloud Engineer</title>
+<meta name="description" content="Laxman Birajdar, Entry-level DevOps &amp; Cloud engineer. AWS, Docker, Terraform and GitHub Actions projects, documented on GitHub.">
+<meta name="theme-color" content="#0A0A0B">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Laxman Birajdar — DevOps &amp; Cloud Engineer">
+<meta property="og:description" content="Building infrastructure and automating deployments with AWS, Docker, Terraform and GitHub Actions.">
+<meta property="og:url" content="https://laxmanbirajdar-portfolio.netlify.app/">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <a class="skip" href="#main">Skip to content</a>
-  <header class="nav" id="nav">
-    <div class="wrap nav-in">
-      <a class="logo" href="#home">Laxman Birajdar</a>
-      <nav id="menu" aria-label="Primary">
-        <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a
-          href="#education">Education</a><a href="#contact">Contact</a>
-        <a class="btn sm ghost" href="assets/Laxman_Birajdar_Resume.pdf" target="_blank" rel="noopener">Resume</a>
-      </nav>
-      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"
-        aria-controls="menu"><span></span><span></span></button>
-    </div>
-  </header>
+<a class="skip" href="#main">Skip to content</a>
+<div id="progress" aria-hidden="true"></div>
+<header class="nav" id="nav"><div class="wrap nav-in">
+<a class="logo" href="#home">laxman<span>@infra</span></a>
+<nav id="menu" aria-label="Primary"><a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#journey">Journey</a><a href="#contact">Contact</a>
+<a class="btn sm" href="assets/Laxman_Birajdar_DevOps_Resume.pdf" download>Resume</a></nav>
+<button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+</div></header>
 
-  <main id="main">
-    <section class="hero" id="home">
-      <div class="wrap hero-in">
-        <p class="pill"><i></i>Open to DevOps &amp; Cloud roles</p>
-        <h1>Hi, I'm <span class="grad">Laxman Birajdar</span></h1>
-        <p class="role">DevOps &amp; Cloud Engineer</p>
-        <p class="lead">I containerize applications, automate CI pipelines with GitHub Actions, and provision AWS
-          infrastructure with Terraform. Every project is documented on GitHub.</p>
-        <div class="actions">
-          <a class="btn" href="#projects">View Projects</a>
-          <a class="btn ghost" href="assets/Laxman_Birajdar_Resume.pdf" target="_blank" rel="noopener">View Resume</a>
-        </div>
-        <p class="social"><a href="https://github.com/laxmanbirajdar057-dot" target="_blank" rel="noopener">GitHub</a><a
-            href="https://www.linkedin.com/in/laxman-birajdar" target="_blank" rel="noopener">LinkedIn</a></p>
-      </div>
-    </section>
+<main id="main">
+<section class="hero" id="home">
+<canvas id="net" aria-hidden="true"></canvas>
+<div class="wrap hero-in">
+<div>
+<p class="who">Laxman Birajdar · Entry-level DevOps &amp; Cloud Engineer · Mumbai, India</p>
+<p class="status"><i></i>Open to DevOps &amp; Cloud roles</p>
+<h1>Building Infrastructure.<br>Automating Possibilities.</h1>
+<p class="lead">Aspiring DevOps &amp; Cloud Engineer focused on reliable cloud infrastructure, automated deployments and better delivery workflows. Built with AWS, Docker, Terraform and GitHub Actions.</p>
+<div class="actions">
+<a class="btn rose" href="assets/Laxman_Birajdar_DevOps_Resume.pdf" download>Download resume</a>
+<a class="btn" href="#projects">View projects</a>
+<a class="btn ghost" href="#contact">Contact me</a>
+</div>
+<p class="social"><a href="https://github.com/laxmanbirajdar057-dot" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/laxman-birajdar" target="_blank" rel="noopener">LinkedIn</a></p>
+</div>
+<div class="term" role="region" aria-label="Interactive terminal">
+<div class="term-bar"><i></i><i></i><i></i><span>~/laxman</span></div>
+<div class="term-body" id="out" aria-live="polite"></div>
+<label class="term-in">$<input id="cmd" autocomplete="off" spellcheck="false" aria-label="Terminal command" placeholder="type help"></label>
+</div>
+</div>
+</section>
 
-    <section class="sec" id="about">
-      <div class="wrap">
-        <h2>About</h2>
-        <div class="two">
-          <div class="prose">
-            <p>I'm an Electronics &amp; Telecommunication engineer (B.E., Mumbai) building a DevOps and cloud foundation
-              through hands-on projects. I focus on repeatable deployments: containerizing applications, automating
-              pipelines, and provisioning AWS infrastructure as code.</p>
-            <p>My projects cover Docker Compose deployments on EC2, GitHub Actions pipelines that test, build, and
-              publish images to GHCR, and Terraform configurations for VPC, subnets, security groups, IAM, and EC2. I
-              also automate tasks with Bash and administer Linux servers over SSH.</p>
-            <p>I'm looking for an entry-level DevOps, cloud, or infrastructure role where I can keep learning on
-              production systems.</p>
-          </div>
-          <dl class="facts">
-            <div>
-              <dt>Focus</dt>
-              <dd>CI/CD and cloud deployment</dd>
-            </div>
-            <div>
-              <dt>Certified</dt>
-              <dd>AWS Cloud Practitioner</dd>
-            </div>
-            <div>
-              <dt>Targeting</dt>
-              <dd>DevOps, Cloud, Infrastructure, and Linux roles</dd>
-            </div>
-          </dl>
-        </div>
-      </div>
-    </section>
+<section class="sec" id="about"><div class="wrap two">
+<h2>About</h2>
+<div class="prose">
+<p>I'm an Electronics &amp; Telecommunication engineer (B.E., Mumbai) building a DevOps and cloud foundation through hands-on projects. I care about repeatable deployments: containerizing applications, automating pipelines and defining AWS infrastructure as code.</p>
+<p>My work so far covers Docker Compose on EC2, GitHub Actions pipelines that publish images to GHCR, and modular Terraform for VPC, EC2, IAM and monitoring. I'm looking for an Entry-level DevOps, cloud or infrastructure role where I can keep learning on production systems.</p>
+</div></div></section>
 
-    <section class="sec alt" id="skills">
-      <div class="wrap">
-        <h2>Skills</h2>
-        <div class="skills">
-          <div class="skill"><span class="tile"><img src="assets/icons/aws.svg" alt="" width="30" height="30"
-                loading="lazy"></span>
-            <h3>AWS</h3>
-            <p>EC2, VPC, IAM, S3, Elastic Load Balancer, CloudWatch, Security Groups</p>
-          </div>
-          <div class="skill"><span class="tile"><img src="assets/icons/docker.svg" alt="" width="30" height="30"
-                loading="lazy"></span>
-            <h3>Docker</h3>
-            <p>Dockerfiles, multi-stage builds, Compose, GHCR</p>
-          </div>
-          <div class="skill"><span class="tile"><img src="assets/icons/terraform.svg" alt="" width="30" height="30"
-                loading="lazy"></span>
-            <h3>Terraform</h3>
-            <p>VPC, subnets, security groups, IAM roles, EC2</p>
-          </div>
-          <div class="skill"><span class="tile"><img src="assets/icons/githubactions.svg" alt="" width="30" height="30"
-                loading="lazy"></span>
-            <h3>GitHub Actions</h3>
-            <p>Test, build, publish; Terraform validate, plan, apply</p>
-          </div>
-          <div class="skill"><span class="tile"><img src="assets/icons/linux.svg" alt="" width="30" height="30"
-                loading="lazy"></span>
-            <h3>Linux</h3>
-            <p>Ubuntu, SSH, server administration</p>
-          </div>
-          <div class="skill"><span class="tile"><img src="assets/icons/bash.svg" alt="" width="30" height="30"
-                loading="lazy"></span>
-            <h3>Bash</h3>
-            <p>Automation scripts</p>
-          </div>
-          <div class="skill"><span class="tile"><img src="assets/icons/git.svg" alt="" width="30" height="30"
-                loading="lazy"></span>
-            <h3>Git &amp; GitHub</h3>
-            <p>Branching, pull requests, repositories</p>
-          </div>
-          <div class="skill"><span class="tile"><svg viewBox="0 0 24 24" width="28" height="28" fill="none"
-                stroke="#0E1520" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
-                <circle cx="12" cy="5" r="2.5" />
-                <circle cx="5" cy="19" r="2.5" />
-                <circle cx="19" cy="19" r="2.5" />
-                <path d="M12 7.5v4M12 11.5 6 17M12 11.5l6 5.5" />
-              </svg></span>
-            <h3>Networking</h3>
-            <p>Fundamentals</p>
-          </div>
-        </div>
-      </div>
-    </section>
+<section class="sec alt" id="projects"><div class="wrap">
+<h2>Inside my infrastructure</h2>
+<p class="sub">Pick a project, then select any node to see what it does and how I used it.</p>
+<div class="tabs" role="tablist" id="tabs"></div>
+<div class="proj" id="proj">
+<div class="flow" id="flow" role="list"></div>
+<div class="panel" id="panel" aria-live="polite"></div>
+<div class="meta" id="meta"></div>
+</div></div></section>
 
-    <section class="sec" id="projects">
-      <div class="wrap">
-        <h2>Projects</h2>
-        <div class="cards">
+<section class="sec" id="skills"><div class="wrap">
+<h2>Technical expertise</h2>
+<p class="sub">Each tool is listed with where I have used it.</p><div class="tw"><table><thead><tr><th scope="col">Area</th><th scope="col">Tools</th><th scope="col">Used in</th></tr></thead><tbody><tr><th scope="row">Cloud</th><td><img src="assets/icons/aws.svg" alt="" width="16" height="16"> AWS: EC2, VPC, IAM, S3, ELB, CloudWatch, SNS, security groups</td><td>Terraform project, URL shortener</td></tr><tr><th scope="row">Infrastructure as code</th><td><img src="assets/icons/terraform.svg" alt="" width="16" height="16"> Terraform, modules, state</td><td>Terraform project</td></tr><tr><th scope="row">Containers</th><td><img src="assets/icons/docker.svg" alt="" width="16" height="16"> Docker, Docker Compose, GHCR</td><td>URL shortener</td></tr><tr><th scope="row">CI/CD</th><td><img src="assets/icons/githubactions.svg" alt="" width="16" height="16"> GitHub Actions</td><td>Both projects</td></tr><tr><th scope="row">Linux and scripting</th><td><img src="assets/icons/linux.svg" alt="" width="16" height="16"> Ubuntu, SSH, Bash</td><td>EC2 servers, Nginx user-data</td></tr><tr><th scope="row">Version control</th><td><img src="assets/icons/git.svg" alt="" width="16" height="16"> Git and GitHub</td><td>Both projects</td></tr><tr><th scope="row">Networking</th><td>Fundamentals, VPC subnets, security groups</td><td>Terraform project</td></tr></tbody></table></div></div></div></section>
 
-          <article class="card">
-            <div class="thumb" role="img"
-              aria-label="Architecture: push to main, GitHub Actions test and build, GHCR image, EC2 running Docker Compose with app and MySQL">
-              <span>Push to <b>main</b></span><span>GitHub Actions<br>test · build</span><span>GHCR<br>latest · commit
-                SHA</span><span>EC2 · Docker Compose<br>app + MySQL</span>
-            </div>
-            <h3>Two-Tier Application on AWS</h3>
-            <p>A Spring Boot and MySQL URL shortener, containerized with Docker and deployed on AWS EC2. A GitHub
-              Actions pipeline tests, builds, and publishes the image to GHCR.</p>
-            <div class="links">
-              <a href="https://github.com/laxmanbirajdar057-dot/urlshortener" target="_blank" rel="noopener noreferrer"
-                aria-label="View AWS Terraform Infrastructure project on GitHub">
-                View GitHub Repository →
-              </a>
-            </div>
-          </article>
+<section class="sec alt" id="journey"><div class="wrap two">
+<h2>Engineering journey</h2>
+<ol class="tl">
+<li><b>Linux</b><span>Ubuntu servers, SSH, Bash scripting.</span></li>
+<li><b>AWS</b><span>EC2, VPC and IAM; AWS Certified Cloud Practitioner (2025).</span></li>
+<li><b>Docker</b><span>Dockerfiles and Compose for multi-container apps.</span></li>
+<li><b>CI/CD</b><span>GitHub Actions to test, build and publish images to GHCR.</span></li>
+<li><b>Terraform</b><span>Modular AWS infrastructure with CI checks.</span></li>
+</ol></div></section>
+
+<section class="sec" id="cert"><div class="wrap two">
+<h2>Certification &amp; education</h2>
+<div>
+<article class="cert"><span class="seal" aria-hidden="true"></span><h3>AWS Certified Cloud Practitioner</h3><p>Amazon Web Services · 2025</p><a class="btn sm" href="https://drive.google.com/file/d/14H3WGhGc21Z1fZlT_4nUfZbAIQG9MsDj/view" target="_blank" rel="noopener">Verify credential</a></article>
+<dl class="edu"><dt>B.E., Electronics &amp; Telecommunication</dt><dd>MCT's Rajiv Gandhi Institute of Technology, Mumbai · 2023–2026</dd><dt>Diploma, Electronics Engineering</dt><dd>Government Polytechnic, Mumbai · 2020–2023</dd></dl>
+</div></div></section>
 
 
-          <article class="card">
-            <div class="thumb" role="img" aria-label="Terraform AWS infrastructure with GitHub Actions CI">
-
-              <span>Terraform<br>Infrastructure as Code</span>
-
-              <span>GitHub Actions<br>Format · Validate</span>
-
-              <span>AWS<br>VPC · EC2 · IAM · CloudWatch</span>
-            </div>
-
-            <h3>AWS Infrastructure Automation Using Terraform</h3>
-
-            <p>
-              Built modular AWS infrastructure using Terraform, including VPC,
-              public/private subnets, security groups, IAM, and EC2.
-              Automated Nginx server setup using Bash user-data scripting,
-              configured CloudWatch monitoring with SNS email alerts, and
-              implemented GitHub Actions CI for Terraform formatting and validation.
-            </p>
-
-            <div class="links">
-              <a href="https://github.com/laxmanbirajdar057-dot/terraform-aws-infrastructure" target="_blank"
-                rel="noopener noreferrer" aria-label="View AWS Terraform Infrastructure project on GitHub">
-                View GitHub Repository →
-              </a>
-            </div>
-          </article>
-
-
-        </div>
-      </div>
-    </section>
-
-    <section class="sec alt" id="education">
-      <div class="wrap">
-        <h2>Education &amp; Certification</h2>
-        <div class="edu">
-          <div class="item">
-            <h3>B.E., Electronics &amp; Telecommunication Engineering</h3>
-            <p>MCT's Rajiv Gandhi Institute of Technology, Mumbai</p><span>2023 – 2026</span>
-          </div>
-          <div class="item">
-            <h3>Diploma, Electronics Engineering</h3>
-            <p>Government Polytechnic, Mumbai</p><span>2020 – 2023</span>
-          </div>
-          <div class="item">
-            <h3>AWS Certified Cloud Practitioner</h3>
-            <p>Amazon Web Services</p><span>2025</span><a
-              href="https://drive.google.com/file/d/14H3WGhGc21Z1fZlT_4nUfZbAIQG9MsDj/view" target="_blank"
-              rel="noopener">View credential →</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="sec" id="contact">
-      <div class="wrap two contact">
-        <div>
-          <h2>Let's connect</h2>
-          <p class="lead sm">I'm open to entry-level DevOps, cloud, and infrastructure roles. Send a message or reach me
-            directly.</p>
-          <dl class="reach">
-            <div>
-              <dt>Email</dt>
-              <dd><a href="mailto:laxmanbirajdar057@gmail.com">laxmanbirajdar057@gmail.com</a></dd>
-            </div>
-            <div>
-              <dt>Location</dt>
-              <dd>Mumbai, India</dd>
-            </div>
-          </dl>
-          <p class="social"><a href="https://github.com/laxmanbirajdar057-dot" target="_blank"
-              rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/laxman-birajdar" target="_blank"
-              rel="noopener">LinkedIn</a><a href="assets/Laxman_Birajdar_Resume.pdf" target="_blank"
-              rel="noopener">Resume</a>
-        </div>
-        <form class="form" action="https://formsubmit.co/laxmanbirajdar057@gmail.com" method="POST">
-          <input type="hidden" name="_subject" value="New message from portfolio site"><input type="hidden"
-            name="_captcha" value="false">
-          <label>Your name<input type="text" name="name" autocomplete="name" required></label>
-          <label>Email address<input type="email" name="email" autocomplete="email" required></label>
-          <label>Message<textarea name="message" rows="5" required></textarea></label>
-          <button class="btn" type="submit">Send message</button>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <footer class="foot">
-    <div class="wrap"><span>© 2026 Laxman Birajdar</span><span>Entry-level DevOps &amp; Cloud Engineer</span></div>
-  </footer>
-  <script src="script.js"></script>
-</body>
-
-</html>
+<section class="sec alt" id="contact"><div class="wrap two">
+<div><h2>Let's build something reliable.</h2>
+<p class="lead sm">Open to Entry-level DevOps, cloud and infrastructure roles.</p>
+<p class="social big"><a id="mail" href="mailto:laxmanbirajdar057@gmail.com">laxmanbirajdar057@gmail.com</a><a href="https://www.linkedin.com/in/laxman-birajdar" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/laxmanbirajdar057-dot" target="_blank" rel="noopener">GitHub</a></p>
+<div class="actions"><a class="btn rose" href="assets/Laxman_Birajdar_DevOps_Resume.pdf" download>Download resume</a><button type="button" id="copy" class="btn ghost">Copy email</button><span id="ok" role="status"></span></div></div>
+<form class="form" action="https://formsubmit.co/laxmanbirajdar057@gmail.com" method="POST">
+<input type="hidden" name="_subject" value="New message from portfolio site"><input type="hidden" name="_captcha" value="false">
+<label>Your name<input type="text" name="name" autocomplete="name" required></label>
+<label>Email address<input type="email" name="email" autocomplete="email" required></label>
+<label>Message<textarea name="message" rows="4" required></textarea></label>
+<button class="btn" type="submit">Send message</button></form>
+</div></section>
+</main>
+<footer class="foot"><div class="wrap"><span>© 2026 Laxman Birajdar</span><span>Entry-level DevOps &amp; Cloud Engineer</span></div></footer>
+<script src="script.js"></script>
+</body></html>
